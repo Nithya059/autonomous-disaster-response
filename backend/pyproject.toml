@@ -1,0 +1,35 @@
+# =============================================================================
+# Autonomous Disaster Response & Resource Coordinator
+# Python project metadata and tool configuration
+# =============================================================================
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "disaster-response-backend"
+version = "0.1.0"
+description = "Autonomous Disaster Response & Resource Coordinator — FastAPI backend"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+# =============================================================================
+# pytest configuration
+# Ensures `app` is importable from the backend/ directory during test runs
+# and during Alembic migrations (which also run from backend/)
+# =============================================================================
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+# pythonpath = ["."] adds backend/ to sys.path so `from app.x import y` works
+# without installing the package — critical for Alembic env.py and test imports
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
