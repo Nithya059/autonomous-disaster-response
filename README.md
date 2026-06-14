@@ -147,7 +147,7 @@ autonomous-disaster-response/
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/autonomous-disaster-response.git
+git clone https://github.com/Nithya059/autonomous-disaster-response.git
 cd autonomous-disaster-response
 
 2️⃣ Backend Setup
@@ -212,10 +212,9 @@ Category: AI for Social Good / Emergency Response Technology
 
 👨‍💻 Team
 
-Team Name: [Your Team Name]
+Team Name: Creative Tech Brain
 Developer: Nithya H S
-GitHub: Add your repository link here
-Email: Add your contact email here
+GitHub: https://github.com/Nithya059/autonomous-disaster-response/
 
 ---
 
